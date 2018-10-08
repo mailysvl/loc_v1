@@ -1,0 +1,8 @@
+Customer Name:
+{{ name }}
+
+Email:
+{{ email }}
+
+Content:
+{{ details|safe|striptags}}

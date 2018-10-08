@@ -1,0 +1,518 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ appName }}</title>
+
+    <link rel="icon" href="{% static 'images/icon/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: 'dd/mm/yy',
+                firstDay: 1
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav justify-content-center fixed-top bg-light" style="padding: 10px">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#roomRates">Rooms & Rates</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a href="."><img src="{% static 'images/icon/LOC-logo.png' %}" height="70px"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reservation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+        </li>
+    </ul>
+</div>
+{% block main %}
+    <div style="width: 100%; padding: 0;margin: 0; height: 90vh">
+        <img src="{% static 'images/Hotel Pic/entrance.jpg' %}"
+             style="height:100%; width:100%; margin:0; padding: 0;display: block;object-fit: cover;"/>
+        <div id="layer" style="background-color: rgba(77, 86, 86, 0.6); position: absolute;top: 90px;left: 0;width: 100%;
+    height: 90vh;padding: 0"></div>
+        <div class="welcome">
+            <h2 style="text-align: center"><strong>WELCOME TO LAO ORCHID HOTEL</strong></h2><br>
+            <p style="font-size: 20px">Lao Orchid Hotel is a 3 star hotel conveniently located within the heart of
+                Vientiane Capital. The hotel
+                is designed in a contemporary Lao style with well décor. The hotel is surrounded by many famous
+                restaurants, coffee shops, boutique shops and just 2 minutes walk to the Night Market, which is along
+                the Mekong River. Also, the location is easily accessible to tourist attractions. It is consistently
+                rates among the high in both customer service and guest satisfaction as reviewed by fellow
+                travellers.</p>
+        </div>
+    </div>
+
+    <div class="main-content" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+
+        {% comment %}
+        <div class="mainPitch" style="position:absolute; top:100px; right:100px; width:300px;
+        background: rgba(77, 86, 86,0.6); color:white">
+            <div class="container" style="width: 100%; padding: 20px; margin: auto; ">
+                <div style="text-align:center;">
+                    <h3>Booking</h3>
+                </div>
+                <div style="margin: auto; width: 100%">
+                    <form role="form" action="{% url 'booking' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row" style="width: 100%; margin: auto">
+                            <div class="col-md-12">
+                                <label for="datepicker">Check-in</label><input type="text" name="checkin"
+                                                                               id="datepicker">
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%; margin: auto; padding-top:20px">
+                            <div class="col-md-12">
+                                <label for="datepicker">Check-out</label><input type="text" name="checkout"
+                                                                                id="datepicker">
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%; margin: auto; padding-top:20px">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label> Adult
+                                        <select name="adult" class="form-control form-control-sm">
+                                            <option value="" disabled selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="overflow: auto">
+                                <div class="form-group" style="float: right">
+                                    <label> Child
+                                        <select name="child" class="form-control form-control-sm">
+                                            <option value="" disabled selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-blue-grey">Request</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endcomment %}
+        <div class="content-section" id="roomRates" style="text-align: center; margin: auto">
+            <h1>Rooms & Rates</h1>
+            <div class="details" id="room_rates">
+                <div class="row">
+                    <div class="col-xl-6 room" style="margin:auto">
+                        <img class="roomPic" src="{% static 'images/Hotel Pic/SUPERIOR TWIN ROOM 2.JPG' %}"/>
+                        <div class="bottom-left">
+                            <h4><strong>Superior Twin Room</strong></h4>
+                            <hr>
+                            <p style="text-align: right">$85/night</p>
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text" style="text-align: center; width: 80%; margin: auto">
+                                <h2><strong>Superior Twin Room</strong></h2>
+                                <p style="font-size: 17px; color: #8E7037"><strong>$85/night</strong></p>
+                                <p>Our Superior Double Room are fully furnished with a very
+                                    comfortable bed, air conditioned, satellite TV, individual save, Free internet
+                                    Wi-Fi.
+                                    All rooms are with amenities.</p>
+                                <table>
+                                    <tr>
+                                        <td class="col-xl-6"
+                                            style="text-align: center">
+                                            <i class="fas fa-user"></i>2 adults
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-expand-arrows-alt"></i>30m<sup>2</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-bed"></i>Twin
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center;"><i class="fas fa-utensils"></i>Breakfast
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 room" style="margin:auto">
+                        <img class="roomPic" src="{% static 'images/Hotel Pic/0G7A1514.jpg' %}"/>
+                        <div class="bottom-left">
+                            <h4><strong>Superior Double Room</strong></h4>
+                            <hr>
+                            <p style="text-align: right">$85/night</p>
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text" style="text-align: center; width: 80%; margin: auto">
+                                <h2><strong>Superior Double Room</strong></h2>
+                                <p style="font-size: 17px; color: #8E7037"><strong>$85/night</strong></p>
+                                <p>Our Superior Double Room are fully furnished with a very
+                                    comfortable bed, air conditioned, satellite TV, individual save, Free internet
+                                    Wi-Fi.
+                                    All rooms are with amenities.</p>
+                                <table>
+                                    <tr>
+                                        <td class="col-xl-6"
+                                            style="text-align: center">
+                                            <i class="fas fa-user"></i>2 adults
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-expand-arrows-alt"></i>30m<sup>2</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-bed"></i>Double
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center;"><i class="fas fa-utensils"></i>Breakfast
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px">
+                    <div class="col-xl-6 room" style="margin:auto">
+                        <img class="roomPic" src="{% static 'images/Hotel Pic/Deluxe Suite Type.jpg' %}"/>
+                        <div class="bottom-left">
+                            <h4><strong>Deluxe Suite Room</strong></h4>
+                            <hr>
+                            <p style="text-align: right">$115/night</p>
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text" style="text-align: center; width: 80%; margin: auto">
+                                <h2><strong>Deluxe Suite Room</strong></h2>
+                                <p style="font-size: 17px; color: #8E7037"><strong>$115/night</strong></p>
+                                <p>Our 4 Deluxe Suite Room same as deluxe rooms with VIP amenities. Free internet
+                                    Wi-Fi.</p>
+                                <table>
+                                    <tr>
+                                        <td class="col-xl-6"
+                                            style="text-align: center">
+                                            <i class="fas fa-user"></i>2 adults
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-expand-arrows-alt"></i>60m<sup>2</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-bed"></i>Twin
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center;"><i class="fas fa-utensils"></i>Breakfast
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 room" style="margin:auto">
+                        <img class="roomPic" src="{% static 'images/Hotel Pic/Apartment4.jpg' %}"/>
+                        <div class="bottom-left">
+                            <h4><strong>Apartment</strong></h4>
+                            <hr>
+                            <p style="text-align: right">$170/night</p>
+                            <p style="text-align: right">$2000/month</p>
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text" style="text-align: center; width: 80%; margin: auto">
+                                <h2><strong>Apartment</strong></h2>
+                                <p style="font-size: 17px; color: #8E7037"><strong>$170/night | $2000/month</strong></p>
+                                <p>Our 2 apartments come with a large terrace you can see the mekong river and a 180
+                                    degree view on Vientiane capital.<br>For a longer stay , contact us </p>
+                                <table>
+                                    <tr>
+                                        <td class="col-xl-6"
+                                            style="text-align: center">
+                                            <i class="fas fa-user"></i>2 adults
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-expand-arrows-alt"></i>90m<sup>2</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xl-6" style="text-align: center"><i
+                                                class="fas fa-bed"></i>Twin
+                                        </td>
+                                        <td class="col-xl-6" style="text-align: center;"><i class="fas fa-eye"></i>Mekong
+                                            river view
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section" id="services">
+            <h1 style="text-align: center">Services</h1>
+            <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua
+                cupidatat
+                mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food
+                truck,
+                mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation
+                quis
+                gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+        </div>
+
+        <div class="content-section" id="reservation">
+            <h1 style="text-align: center">Reservation</h1>
+            <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing
+                banh
+                mi,
+                velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park
+                consequat
+                quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred
+                ex
+                in,
+                sustainable delectus consectetur fanny pack iphone.</p>
+        </div>
+
+        <div class="content-section" id="gallery">
+            <h1 style="text-align: center;">Gallery</h1>
+            <!--Carousel Wrapper-->
+            <div id="carousel" class="carousel slide carousel-fade col-xl-7" data-ride="carousel"
+                 style="margin: auto; padding-top:20px">
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/AEE_9139.jpg' %}"
+                             alt="hotel">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/Front Desk.jpg' %}"
+                             alt="font desk">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/balcony.jpg' %}"
+                             alt="balcony">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/Business Center.jpg' %}"
+                             alt="business center">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/0G7A1306.jpg' %}"
+                             alt="bedroom">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/DELUXE SUITE ROOM 2.jpg' %}"
+                             alt="deluxe suite room 2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/0G7A1940.jpg' %}"
+                             alt="breakfast">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/dinning area.jpg' %}"
+                             alt="dining area">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/Apartment2.jpg' %}"
+                             alt="apartment">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'images/Hotel Pic/AEE_9057.jpg' %}"
+                             alt="stairs">
+                    </div>
+
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+
+                <div style="text-align: center;width: 100%">
+                    <div data-target="#carousel" data-slide-to="0" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/AEE_9139.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="1" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/Front Desk.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="2" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/balcony.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="3" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/Business Center.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="4" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/0G7A1306.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="5" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/DELUXE SUITE ROOM 2.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="6" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/0G7A1940.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="7" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/dinning area.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="8" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/Apartment2.jpg' %}">
+                    </div>
+                    <div data-target="#carousel" data-slide-to="9" class="thumbnail">
+                        <img src="{% static 'images/Hotel Pic/AEE_9057.jpg' %}">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--/.Carousel Wrapper-->
+
+
+        </div>
+
+        <div class="content-section" id="contact">
+            <div class="row">
+                <div class="col-xl-5">
+                    <h3 class="section-heading h1 pt-4 text-center">Contact Us</h3>
+                    <p class="section-description">Do you have any questions? Please do not hesitate to contact us
+                        directly. Our
+                        team will come back to you within
+                        matter of hours to help you.</p>
+                    <form role="form" action="{% url 'contact' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    {{ form.name }}
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    {{ form.email }}
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    {{ form.subject }}
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    {{ form.details }}
+                                    <label for="message">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary send">Send</button>
+                        </div>
+                    </form>
+                    <div class="status"></div>
+                </div>
+                <div class="col-xl-7">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3046296382417!2d102.60028111488454!3d17.964558787735168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3124686e75a83c43%3A0xb2197ea57ab6031!2sLao+Orchid+Hotel!5e0!3m2!1slo!2sla!4v1520497802649"
+                            width="100%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="row contact-icons" style="padding-top: 10px">
+                        <div class="col-xl-5">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Chao Anou Road, Watchanh Village<br>
+                                Chanthabouly District, Vientiane Capital, Lao PDR</p>
+                        </div>
+                        <div class="col-xl-4">
+                            <i class="fas fa-phone fa-2x"></i>
+                            <p style="margin: 0">+(856) 21 264 134-6</p>
+                            <p style="margin: 0">+(856) 21 264 138</p>
+                        </div>
+                        <div class="col-xl-3">
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <p><a href="mailto:info@lao-orchid.com" style="color: black">info@lao-orchid.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+{% comment %}<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>{% endcomment %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
