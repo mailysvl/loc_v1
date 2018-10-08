@@ -19,17 +19,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['w-!qq7wir=7)mml0jqbl5(-a8afi=m!0wv&m7q2t(lwdc95=3b']
+SECRET_KEY = 'w-!qq7wir=7)mml0jqbl5(-a8afi=m!0wv&m7q2t(lwdc95=3b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-X_FRAME_OPTIONS = 'DENY'
 
 ALLOWED_HOSTS = ['lao-orchid.com', '51.68.175.96']
 
@@ -80,7 +73,7 @@ WSGI_APPLICATION = 'loc_v1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'lao_orchid_db',
         'USER': 'laoorchid',
         'PASSWORD': 'LOC@2018',
