@@ -1,0 +1,295 @@
+body {
+    padding-top: 90px;
+}
+
+.main-content {
+    margin: 0 30px 30px 30px;
+}
+
+.main-content p {
+    font-size: 16px;
+}
+
+.contact-form {
+    border-color: black;
+}
+
+.contact-icons {
+    text-align: center;
+    margin: auto;
+}
+
+form {
+    padding-top: 30px;
+}
+
+.section-description {
+    text-align: center;
+    margin-top: 30px;
+}
+
+textarea.md-textarea {
+    height: 7rem;
+}
+
+.nav-link {
+    color: saddlebrown;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: saddlebrown;
+}
+
+.active {
+    text-decoration: underline;
+    color: saddlebrown;
+}
+
+a {
+    color: black;
+}
+
+/*.navbar-brand {
+    background-color: #f8f9f9;
+}*/
+
+input {
+    background-color: transparent !important;
+    border: darkgray;
+}
+
+.content-section {
+    padding-top: 100px;
+    height: 90vh;
+}
+
+.ui-datepicker {
+    background: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.ui-datepicker table {
+    width: 200px;
+}
+
+.ui-datepicker table td {
+    text-align: center;
+}
+
+.ui-datepicker a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ui-datepicker-prev {
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.ui-state-highlight {
+    background-color: saddlebrown;
+    border: 1px solid brown;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+#datepicker {
+    border: 1px solid white;
+]
+}
+
+.welcome {
+    padding: 100px;
+    color: white;
+    width: 100%;
+    position: absolute;
+    animation: floatText 3s ease-in-out forwards;
+}
+
+@-webkit-keyframes floatText {
+    from {
+        top: 00%;
+    }
+
+    to {
+        /* left: auto; */
+        top: 250px;
+    }
+}
+
+.details {
+    width: 70%;
+    margin: 20px auto 20px auto;
+}
+
+.room .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    color: white;
+}
+
+.room:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.room:hover .bottom-left {
+    display: none;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text p {
+    font-size: 13px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+table td, table th {
+    border: 1px solid white;
+    font-size: 13px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
+}
+
+/*.room:before {
+    content: 'Here is some text..';
+    width:80%;
+    color:#fff;
+    z-index:1;
+    bottom:0;
+    padding:4px 10px;
+    text-align:center;
+    background:red;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    position: absolute;
+}
+
+.room:after {
+    content: '\A';
+    color: #fff;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(77, 86, 86, 0.6);
+    transform: translate(-50%, 0);
+}
+
+.room:after {
+    position:absolute;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    opacity: 0;
+}
+.room:hover:after {
+    opacity:1;
+}*/
+/*
+.room:hover {
+    background-color: rgba(77, 86, 86, 0.6);
+    z-index: 0;
+}
+*/
+
+/*.room:hover .bottom-left {
+    margin-top: -20px;
+}*/
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -8px);
+    color: white;
+}
+
+.bottom-left p {
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-left ul {
+
+}
+
+hr {
+    background-color: saddlebrown;
+}
+
+.roomPic {
+    max-width: 85%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 20%;
+    margin: 10px 1%;
+    max-width: 60px;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 100%
+}
+
+.thumbnail:hover {
+    opacity: 0.6;
+}
