@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7aba30e2-4502-4d88-bf01-680cb4973a4f" name="Default" comment="resize image">
       <change beforePath="$PROJECT_DIR$/hotel/templates/hotel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/templates/hotel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loc_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/loc_v1/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,17 +61,17 @@
         <counts>
           <entry key="conf" value="1" />
           <entry key="css" value="12" />
-          <entry key="html" value="47" />
-          <entry key="py" value="89" />
+          <entry key="html" value="64" />
+          <entry key="py" value="98" />
           <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="12" />
-          <entry key="HTML" value="47" />
+          <entry key="HTML" value="64" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="89" />
+          <entry key="Python" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -136,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loc_v1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1770">
-              <caret line="118" column="47" lean-forward="true" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+            <state relative-caret-position="-1213">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -178,17 +179,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hotel/templates/hotel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+            <state relative-caret-position="2843">
+              <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,8 +220,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/loc_v1/wsgi.py" />
         <option value="$PROJECT_DIR$/hotel/static/css/style.css" />
-        <option value="$PROJECT_DIR$/loc_v1/settings.py" />
         <option value="$PROJECT_DIR$/hotel/templates/hotel/index.html" />
+        <option value="$PROJECT_DIR$/loc_v1/settings.py" />
       </list>
     </option>
   </component>
@@ -472,16 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loc_v1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" selection-start-line="19" selection-end-line="20" />
-          <folding>
-            <element signature="e#630#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hotel/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -509,24 +500,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loc_v1/settings.py">
+    <entry file="file://$PROJECT_DIR$/loc_v1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="47" lean-forward="true" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+        <state relative-caret-position="285">
+          <caret line="19" column="26" selection-start-line="19" selection-end-line="20" />
+          <folding>
+            <element signature="e#630#667#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hotel/templates/hotel/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+        <state relative-caret-position="2843">
+          <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loc_v1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1213">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
