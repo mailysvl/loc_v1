@@ -24,7 +24,7 @@ SECRET_KEY = 'w-!qq7wir=7)mml0jqbl5(-a8afi=m!0wv&m7q2t(lwdc95=3b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['lao-orchid.com', '51.68.175.96']
+ALLOWED_HOSTS = ['lao-orchid.com', '51.68.175.96', 'localhost']
 
 # Application definition
 
