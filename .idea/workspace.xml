@@ -2,8 +2,150 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aba30e2-4502-4d88-bf01-680cb4973a4f" name="Default" comment="resize image">
-      <change beforePath="$PROJECT_DIR$/hotel/templates/hotel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/templates/hotel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loc_v1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/loc_v1/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/changelists.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/responsive_rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/css/widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/fonts/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/calendar-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/gis/move_vertex_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/gis/move_vertex_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-addlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-changelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-deletelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-unknown-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-unknown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/icon-yes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/inline-delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/selector-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/sorting-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/tooltag-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/img/tooltag-arrowright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/SelectBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/SelectFilter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/cancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/change_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/collapse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/inlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/inlines.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/jquery.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/popup_response.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/prepopulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/prepopulate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/prepopulate_init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/timeparse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/urlify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/static/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Apartment4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Apartment4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1306.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1306.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1514.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1514.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1940.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1940.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1945.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/0G7A1945.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/5C8A1116.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/5C8A1116.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/5C8A1126.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/5C8A1126.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/AEE_9057.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/AEE_9057.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/AEE_9139.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/AEE_9139.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Apartment2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Apartment2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Apartment4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Apartment4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Business Center.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Business Center.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/DELUXE SUITE ROOM 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/DELUXE SUITE ROOM 2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Deluxe Suite Type.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Deluxe Suite Type.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Deluxe Suite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Deluxe Suite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Front Desk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Front Desk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/SUPERIOR TWIN ROOM 2.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/SUPERIOR TWIN ROOM 2.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Superior Double Room.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/Superior Double Room.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/balcony.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/balcony.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/dinning area.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/dinning area.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/entrance.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/entrance.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/outside.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/outside.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/reception.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/reception.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/temple.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/temple.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/view from room balcony.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Hotel Pic/view from room balcony.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/static/images/Superior Type.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/static/images/Superior Type.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +219,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="1" />
+          <entry key="css" value="1" />
           <entry key="py" value="3" />
           <entry key="txt" value="1" />
           <entry key="yml" value="1" />
@@ -84,6 +227,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="3" />
           <entry key="YAML" value="1" />
@@ -95,15 +239,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotel/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="72" column="20" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hotel/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,11 +272,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loc_v1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1213">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="197">
+              <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hotel/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -183,7 +327,7 @@
         <entry file="file://$PROJECT_DIR$/hotel/templates/hotel/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2843">
-              <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
+              <caret line="334" selection-start-line="334" selection-end-line="334" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -298,6 +442,13 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="hotel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="loc_v1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="hotel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -317,6 +468,11 @@
               <item name="loc_v1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="loc_v1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="loc_v1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -493,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hotel/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/loc_v1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -513,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/hotel/templates/hotel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2843">
-          <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -526,8 +675,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loc_v1/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1213">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="197">
+          <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hotel/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="20" />
         </state>
       </provider>
     </entry>
