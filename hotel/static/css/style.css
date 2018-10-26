@@ -203,52 +203,6 @@ table tr th:last-child {
     border-right: 0;
 }
 
-/*.room:before {
-    content: 'Here is some text..';
-    width:80%;
-    color:#fff;
-    z-index:1;
-    bottom:0;
-    padding:4px 10px;
-    text-align:center;
-    background:red;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    position: absolute;
-}
-
-.room:after {
-    content: '\A';
-    color: #fff;
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    background: rgba(77, 86, 86, 0.6);
-    transform: translate(-50%, 0);
-}
-
-.room:after {
-    position:absolute;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    opacity: 0;
-}
-.room:hover:after {
-    opacity:1;
-}*/
-/*
-.room:hover {
-    background-color: rgba(77, 86, 86, 0.6);
-    z-index: 0;
-}
-*/
-
-/*.room:hover .bottom-left {
-    margin-top: -20px;
-}*/
-
 .bottom-left {
     position: absolute;
     bottom: 0;
@@ -292,4 +246,28 @@ hr {
 
 .thumbnail:hover {
     opacity: 0.6;
+}
+
+.service-list {
+    height: 75vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.service-list i:before {
+    color: saddlebrown;
+    font-size: 60px;
+    background-color: rgb(247, 247, 247);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.service-list h4, .service-list p {
+    margin-top: 20px;
+}
+
+.service-list p {
+    text-align: justify;
 }
